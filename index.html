@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,800&display=swap" rel="stylesheet" />
+    <title>jQuery Task</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1 class="gradient-title">חיפוש מדינות</h1>
+      </div>
+
+      <form>
+        <div>
+          <input spellcheck="false" type="text" placeholder="Search for countries" />
+        </div>
+        <div>
+          <button>
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </form>
+      <div class="search-results-wrapper">
+        <div>
+          <div class="search-results-numbers">
+            <h5 id="total"></h5>
+            <h5 id="average"></h5>
+            <h5 id="total-countries"></h5>
+          </div>
+          <h5 class="sub-title">Countries Results</h5>
+          <div class="search-results top"></div>
+        </div>
+
+        <div class="search-results-regions">
+          <h5 class="sub-title">Region Results</h5>
+          <div class="search-results mid"></div>
+        </div>
+      </div>
+      <div class="on-mount"></div>
+    </div>
+    <script src="./scripts/helpers.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/interface.js"></script>
+  </body>
+</html>
